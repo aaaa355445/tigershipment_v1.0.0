@@ -4,6 +4,7 @@ const express = require('express');
 const DbConnect = require('./db');
 const ErrorMiddleware = require("./middleware/error");
 const cookieParser = require("cookie-parser");
+const path = require("path");
 
 // Import Route functions
 const productRoute = require("./routes/productRoute");
@@ -15,10 +16,7 @@ const app = express();
 app.use(express.json({ limit: '50mb' }));
 app.use(cookieParser());
 
-// Heroku Configration
-if(process.env.NODE_ENV === 'production'){
-    app.use(express.static("frontend/build"));
-}
+// cyclic Configration
 
 // Defining Port no.
 const PORT = process.env.PORT || 5500; 
@@ -35,6 +33,16 @@ app.use("/api/v1", imageHandlingRoute);
 
 // Middleware for Errors
 app.use(ErrorMiddleware);
+
+app.use(express.static(path.join(__dirname, "./frontend/build")));
+app.get("*", function (req, res) {
+    res.sendFile(
+        path.join(__dirname, "./frontend/build/index.html"),
+        function (err) {
+            res.status(500).send(err);
+        }
+    );
+});
 
 
 // Listen port and run the server
