@@ -1,0 +1,192 @@
+.containerBox{
+    width: 1200px;
+    max-width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.category{
+    background: white;
+    width: 350px;
+    height: 60vh;
+    border-radius: 15px;
+}
+
+.category hr{
+    width: 19em;
+    color: #F0F0F0;
+    opacity: 0.5;
+}
+
+.category > ul {
+    margin: 20px 20px;
+}
+
+.category ul li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.category ul li .catLink{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.category ul li .catLink:hover {
+    color: #FF9933;
+}
+
+.category ul li img{
+    max-width: 30px;
+    width: 60%;
+    margin-right: 20px;
+}
+
+.catTitle{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 20px;
+}
+
+
+
+.carousel {
+    width: 800px;
+    height: 60vh;
+    position: relative;
+}
+
+.carousel > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    transform: translateY(-50%);
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, .5);
+    background: rgba(0, 0, 0, .1);
+}
+
+.btn:hover,
+.btn:focus {
+    color: white;
+    background: rgba(0, 0, 0, .2);
+}
+
+.btn.prev {
+    left: 1rem;
+}
+
+.btn.next {
+    right: 1rem;
+}
+
+
+.cardItem{
+    width: 380px;
+    height: 280px;
+    background: white;
+    border-radius: 13px;
+}
+
+.homeCards{
+    margin: 50px auto;
+}
+
+.cardItem > h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 20px;
+}
+
+.productDiv{
+    flex-wrap: wrap;
+}
+
+
+/* Product Card Styling */
+.productCard{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000000;
+    margin: 20px;
+    transition: all 0.5s;
+    padding-bottom: 20px;
+    background: white;
+    border-radius: 13px;
+    
+}
+
+.productCard > img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 13px;
+}
+
+.productCard > p {
+    margin: 0 22px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.productCard > div {
+    display: flex;
+    margin: 0 22px;
+}
+
+.productCard > div > span {
+    display: flex;
+    align-items: center;
+}
+
+.productCard > span {
+    margin-top: 10px;
+    margin-left: 22px;
+}
+

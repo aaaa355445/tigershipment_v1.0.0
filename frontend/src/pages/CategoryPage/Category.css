@@ -1,0 +1,103 @@
+.containerBox{
+    width: 1300px;
+    max-width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.heading{
+    margin: 20px auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+}
+
+.productDiv{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.productsCard{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 1200px;
+}
+
+.paginationBox{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+
+}
+
+.page-item {
+    list-style: none;
+    border: 1px solid rgb(143, 143, 143);
+    padding: 10px 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.page-item:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+    border-radius: 0 5px 5px 0; 
+}
+
+.page-link {
+    text-decoration: none;
+    color: rgb(72, 72, 72);
+}
+
+.page-item:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.pageItemActive {
+    background: #FF9933;
+}
+
+.filterBox{
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 13px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+
+.categoryBox{
+padding: 0%;
+}
+
+.category-link {
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding: 3px 10px;
+}
+
+.category-link:hover{
+    color: #FF9933;
+}
+
+.filterBox .filtertitle{
+    margin: 15px 0;
+    font-weight: bold;
+}

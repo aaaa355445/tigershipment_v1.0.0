@@ -1,0 +1,79 @@
+.LoginContainer {
+    width: 1300px;
+    max-width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.LoginBox {
+    background-color: white;
+    width: 500px;
+    height: 370px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.loginForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;  
+    margin-top: 20px; 
+}
+
+.loginForm > div > input {
+    padding: 10px 40px;
+    padding-right: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.267);
+    border-radius: 4px;
+    outline: none;
+}
+
+.loginForm > div > svg {
+    position: absolute;
+    transform: translateX(10px);
+    font-size: 16px;
+    color: rgba(0,0,0,0.623);
+}
+
+.loginBtn {
+    margin: 20px;
+    background: #FF9933;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.loginBtn:hover {
+    background: #ee8c2a;
+}
+
+.error{
+    background: red;
+    padding: 10px;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+

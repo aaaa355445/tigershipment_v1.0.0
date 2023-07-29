@@ -1,0 +1,47 @@
+.sidebar {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+
+.sidebar > a:first-child {
+    padding: 0;
+}
+
+.sidebar > a > h1 {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF9933;
+}
+
+.sidebar a {
+    text-decoration: none;
+    transition: all 0.5s;
+    padding: 2rem;
+    color: rgba(0,0,0,0.493);
+}
+
+.sidebar a:hover {
+    color: #FF9933;
+    transform: scale(1.1);
+}
+
+.sidebar a > p {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a > p > svg {
+    margin-right: 0.5rem;
+} 
+
+.MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label {
+    background-color: white;
+}
+
+.MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label:hover{
+    background-color: white;
+}
+

@@ -1,0 +1,29 @@
+.reviewCard{
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    margin: 15px 0; 
+    margin-right: 10px ;
+    background: white;
+    border-radius: 13px;
+}
+
+.reviewCard > h3{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.reviewCard > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.reviewCard > div > span {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.reviewCard > p {
+    margin-top: 20px;
+}

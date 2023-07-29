@@ -1,0 +1,83 @@
+.productCard{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #000000;
+    margin: 0 20px;
+    transition: all 0.5s;
+    padding-bottom: 20px;
+    background: white;
+    border-top: 2px solid #F0F0F0;   
+}
+
+.productCard:hover .productMain h1 {
+    color: #3498db;
+}
+
+.productCard > img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.productCard  .productMain{
+    display: flex;
+    flex-direction: column;
+}
+
+.productCard  .productMain h1{
+    margin: 0 22px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 22px;
+    width: 400px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out; 
+}
+
+.productCard  .productMain p{
+    margin: 10px 22px;
+    width: 400px;
+
+}
+
+.productCard  .productMain .reviews{
+    margin: 0 22px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+
+.productCard > div {
+    display: flex;
+    margin: 0 22px;
+}
+
+.priceDiv {
+    display: flex;
+    flex-direction: column;
+}
+.priceDiv > .pricing{
+    font-size: 26px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.priceDiv > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.priceDiv > div > .mrp{
+    text-decoration: line-through;
+    font-size: 16px;
+    color: #7e7e7e;
+    margin-right: 10px;
+}
+.priceDiv > div > .discount{
+    font-size: 14px;
+    color: #3498db;
+    font-weight: bold;
+}
+

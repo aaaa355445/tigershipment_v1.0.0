@@ -1,0 +1,14 @@
+.navbar {
+    padding: 20px 0;
+    height: 50px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navItems{
+    padding-left: 30px;
+}
+
+

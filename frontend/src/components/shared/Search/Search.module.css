@@ -1,0 +1,29 @@
+.searchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox > input[type="text"] {
+    width: 500px;
+    height: 1px;
+    border-radius: 30px;
+    border: none;
+    background-color: #F0F0F0;
+    padding: 20px;
+}
+
+.searchBox > button {
+    border-radius: 50%;
+    border: none;
+    margin-left: -50px;
+    cursor: pointer;
+}
+
+.searchBox > button > img {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

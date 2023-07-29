@@ -1,0 +1,91 @@
+.inquiryForm {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.inquiryModal {
+  width: 50%;
+  max-width: 500px;
+  background: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.heading {
+  font-size: 18px;
+  padding: 20px;
+  padding-bottom: 0px;
+  font-weight: bold;
+}
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.formDiv > input {
+  margin: 10px 0;
+  border: none;
+  background: #f0f0f0;
+  padding: 15px;
+  outline: none;
+  border-radius: 13px;
+}
+.formDiv > textarea {
+  margin: 10px 0;
+  border: none;
+  background: #f0f0f0;
+  padding: 15px;
+  outline: none;
+  border-radius: 13px;
+  height: 30px;
+  min-height: 140px;
+  max-height: 180px;
+  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.formDiv button {
+  margin: auto;
+  background: #3498db;
+  border: none;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 13px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.formDiv button:hover{
+  background: #2478af;
+}
+
+.successMessage {
+  margin: 20px;
+  margin-bottom: 0px;
+  background: green;
+  color: white;
+  padding: 20px;
+  border-radius: 13px;
+}
+
+.closeButton {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
